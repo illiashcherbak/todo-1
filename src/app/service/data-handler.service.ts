@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Category} from "../model/Category";
-import {TestData} from "../data/testData";
+import { Category } from "../model/Category";
+import { Task } from "../model/Task";
+import { TestData } from "../data/testData";
 
 @Injectable({
   providedIn: 'root'
@@ -12,5 +13,9 @@ export class DataHandlerService {
 
   getCategories(): Category[] {
     return TestData.categories;
+  }
+
+  getTasks(): Task[] {
+    return TestData.tasks;
   }
 }
